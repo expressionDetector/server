@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@google-cloud/vision": "^1.8.0",
+    "axios": "^0.19.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "gcs-upload": "^1.1.3",
