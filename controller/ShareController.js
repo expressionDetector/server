@@ -15,10 +15,10 @@ class ShareController{
       }
     })
     .then(({data}) => {
-      res.status(201).json({link: data.url})
+      res.status(201).json({data: data.url})
     })
     .catch((err) => {
-      res.status(500).json({message: `Something wrong with Pinterest API`})
+      res.status(err.response.status).json({message: err.response.statusText})
     })
   }
 }
