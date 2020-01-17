@@ -14,8 +14,8 @@ class ShareController{
         image_url: req.body.imageUrl
       }
     })
-    .then(({data}) => {
-      res.status(201).json({data: data.url})
+    .then(() => {
+      res.status(201).json()
     })
     .catch((err) => {
       res.status(err.response.status).json({message: err.response.statusText})
